@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,700;1,900&family=Manrope:wght@200;300;400;600;700;800&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,800;1,300;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Roboto+Mono:ital,wght@0,200;0,600;1,200;1,300;1,400;1,500&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: rgba(99, 6, 6, 0.864);
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.home_section{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../assets//images//Background.png");
+  background-size: cover;
+  background-position: left;
+  
+
+}
+.home_section header{
+  width:90%;
+margin:auto;
+display: flex;
+
+
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+  font-weight: 700;
+
+
+}
+.home_section header nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+.home_section header nav ul{
+  display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+gap: 24px;
+}
+.home_section header nav  .center_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+flex-direction: row;
+  color: #fff;
+
+}
+.home_section header nav .icon .icon_i{
+
+font-size: 30px;
+background-color: transparent;
+margin-left: 15px;
+margin-top: 9px;
+cursor: pointer;
+
+}
+.home_section .icon{
+  position: relative;
+
+}
+.home_section .icon .numOfPr{
+  position: absolute;
+  font-size: 12px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--mainColor);
+  top: 10%;
+  right: -10%;
+}
+.home_section .Toggle{
+  display: none;
+   visibility: hidden;
+   opacity: 0;
+   padding: 1px 7px;
+   background-color: #fff;
+   color: var(--mainColor);
+   cursor: pointer;
+   font-size: 20px;
+   border-radius: 20%;
+}
+@media(max-width:767px){
+  .home_section .paths{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+background-color: ;
+
+  }
+  .home_section .Toggle{
+    display: block;
+     visibility: visible;
+     opacity: 1;
+  
+  }
+}
