@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import logo from "../../images/about page/Mask group.png"
+
 import './navbar.css';
 
 function Navbar() {
@@ -16,8 +16,8 @@ const toggleMenue= () =>{
       <nav className="navbar">
       <div className="navbar__logo">
         <Link to="/">
-          <img src={logo} alt="Logo" />
-          <span>Payrole</span>
+      
+          <span></span>
         </Link>
         
       </div>
