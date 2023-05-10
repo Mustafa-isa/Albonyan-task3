@@ -40,7 +40,19 @@ function Home() {
     </nav>
 
     </header>
-    .home_co
+    <div className="home_content">
+      <h2>
+      Find the perfect car
+for you at YourCar.
+      </h2>
+<p>
+We offer a wide range of cars that cater to your needs and budget. Visit us today and drive away with your dream car!
+</p>
+<button>
+  Discover
+  <img src= alt="" />
+</button>
+    </div>
   </section>
   )
 }
