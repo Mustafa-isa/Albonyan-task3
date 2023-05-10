@@ -24,9 +24,10 @@ body{
 }
 .home_section header{
   width:90%;
-margin:auto;
-display: flex;
-
+position: fixed;
+top: 0;
+left: 5%;
+right:5%;
 
 }
 ul{
@@ -99,11 +100,41 @@ cursor: pointer;
 @media(max-width:767px){
   .home_section .paths{
     position: fixed;
-    top: 0;
+    top: 6%;
     right: 0;
     width: 40%;
-background-color: ;
+background-color: black;
+height: 100vh;
+transition: .4s ease-in;
 
+transform: translateX(100%);
+
+  }
+  .home_section .paths.show{
+  
+
+transform: translateX(0);
+
+  }
+  
+  .home_section .paths ul{
+display: flex;
+flex-direction: column;
+margin-top: 150px;
+
+
+
+  }
+  .home_section .paths ul li{
+    width: 100%;
+    text-align: center;
+    transition: .2s;
+    padding: 10px;
+
+  }
+  .home_section .paths ul li:hover{
+  background-color: var(--mainColor);
+  
   }
   .home_section .Toggle{
     display: block;
@@ -111,4 +142,22 @@ background-color: ;
      opacity: 1;
   
   }
+  .home_section header{
+background-color: #fff;
+color: #fff;
+width: 100%;
+left: 0;
+right: 0;
+  
+  }
+  .home_section header h1{
+    color: black;
+    font-family: cursive;
+    margin-left: 14px;
+
+  }
+  .home_section .icon .icon_i {
+    color: rgb(48, 3, 3);
+  }
+  
 }

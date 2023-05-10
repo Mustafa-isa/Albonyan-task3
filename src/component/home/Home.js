@@ -16,7 +16,7 @@ function Home() {
         YourCar
       </h1>
       <div className="center_nav">
-        <div className="paths">
+        <div className={`${isOpen ?  "paths show" : "paths"}`}>
           <ul>
             <li className='active'><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -40,6 +40,7 @@ function Home() {
     </nav>
 
     </header>
+    .home_co
   </section>
   )
 }
