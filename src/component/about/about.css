@@ -41,11 +41,17 @@ flex: 2;
 
 
 }
-@media(max-width:920px){
+@media(max-width:767px){
   .about_section .content .imag
 {
 display: none;
 
 
 }
+.about_section .content .p_flex p{
+font-size: 10px;
+}
+.about_section .content .p_flex {
+gap: 3px;
+  }
 }

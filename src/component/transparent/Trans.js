@@ -5,7 +5,7 @@ function Trans(props) {
   return (
   <section className='transpernt_section'>
 <div><h2>{props.title}</h2></div>
-<span>{props.title}</span>
+
   </section>
 
   )

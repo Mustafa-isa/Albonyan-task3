@@ -2,24 +2,19 @@
   position: absolute;
   
   left: 10%px;
-  top: -13%;
+  top: 0;
   
-
+z-index: -1;
   
 }
 .transpernt_section h2{
   font-family: 'Lora';
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 80px;
   line-height: 100px;
-  margin-bottom: -33px;
   text-transform: capitalize;
   
-  color: #EBEBEB;
+  color: #dad3d3;
 }
-.transpernt_section span{
-  color: var(--mainColor);
-  text-transform: capitalize;
-  
-}
+

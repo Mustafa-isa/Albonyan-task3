@@ -27,6 +27,7 @@ body{
 position: fixed;
 top: 0;
 left: 5%;
+z-index: 1000;
 right:5%;
 
 }
@@ -224,6 +225,7 @@ color: #fff;
 width: 100%;
 left: 0;
 right: 0;
+z-index: 1000;
   
   }
   .home_section header h1{
