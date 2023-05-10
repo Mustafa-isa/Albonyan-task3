@@ -53,6 +53,21 @@ justify-content: space-between;
 width: 100%;
 gap: 24px;
 }
+.home_section header nav ul li{
+  padding: 5px 13px;
+  transition: .3s;
+}
+.home_section header nav ul li:hover{
+  padding: 5px 13px;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+.home_section header nav ul li.active{
+  padding: 5px 13px;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
 .home_section header nav  .center_nav{
   display: flex;
   align-items: center;
@@ -97,17 +112,77 @@ cursor: pointer;
    font-size: 20px;
    border-radius: 20%;
 }
+.home_section .home_content{
+position: absolute;
+top: 15%;
+left: 40%;
+right: 10%;
+
+
+}
+.paths{
+  z-index: 1000;
+}
+.home_section .home_content h2{
+  font-family: 'Lora';
+font-style: normal;
+font-weight: 700;
+font-size:40px;
+line-height: 50px;
+text-align: right;
+
+color: #FFFFFF;
+}
+.home_section .home_content p{
+
+
+font-family: 'Lora';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+text-align: right;
+
+color: #FFFFFF;
+}
+.home_section .home_content button{
+  background-color: transparent;
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  outline: none;
+  transition: .3s;
+color: #fff;
+cursor: pointer;
+text-align: right;
+margin-left: auto;
+display: block;
+font-size: 20px;
+
+margin-top: 20px;
+
+}
+.home_section .home_content button:hover{
+  background-color: var(--mainColor);
+border: 0;
+
+
+}
+.home_section .home_content button img{
+  width: 10px;
+}
 @media(max-width:767px){
   .home_section .paths{
     position: fixed;
     top: 6%;
-    right: 0;
+    left: 0;
     width: 40%;
 background-color: black;
 height: 100vh;
 transition: .4s ease-in;
+z-index: 1000;
 
-transform: translateX(100%);
+
+transform: translateX(-100%);
 
   }
   .home_section .paths.show{
@@ -121,7 +196,7 @@ transform: translateX(0);
 display: flex;
 flex-direction: column;
 margin-top: 150px;
-
+z-index: 1000;
 
 
   }
@@ -130,6 +205,7 @@ margin-top: 150px;
     text-align: center;
     transition: .2s;
     padding: 10px;
+    z-index: 1056;
 
   }
   .home_section .paths ul li:hover{
@@ -159,5 +235,17 @@ right: 0;
   .home_section .icon .icon_i {
     color: rgb(48, 3, 3);
   }
+  .home_section .home_content{
+    left: 10%;
   
+  }
+
+  .home_section .home_content p{
+  padding: 10px;
+  border-radius: 10px;
+
+  background-color: rgba(255, 255, 255, .3);
+  color: #333;
+  z-index: 1;
+  }
 }

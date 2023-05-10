@@ -2,6 +2,7 @@ import {React,useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import arowBtn  from "../../assets/images/Vector (1).png"
 import "./nav.css"
 function Home() {
   const [isOpen ,SetOpen] = useState(false)
@@ -50,7 +51,7 @@ We offer a wide range of cars that cater to your needs and budget. Visit us toda
 </p>
 <button>
   Discover
-  <img src= alt="" />
+  <img src={arowBtn} alt="" />
 </button>
     </div>
   </section>
