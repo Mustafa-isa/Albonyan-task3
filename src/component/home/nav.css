@@ -12,6 +12,7 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 .home_section{
   width: 100vw;

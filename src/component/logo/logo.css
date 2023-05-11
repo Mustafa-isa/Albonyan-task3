@@ -1,0 +1,17 @@
+.logo_div_section{
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+logo_div_section img{
+width: 100px;
+}
+@media(max-width:767px){
+  logo_div_section img{
+    width: 60px;
+    }
+}

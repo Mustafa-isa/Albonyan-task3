@@ -4,7 +4,7 @@ import rightImage from "../../assets/images/pngegg 1.png";
 import Trans from "../transparent/Trans";
 function About() {
   return (
-    <section className="about_section">
+    <section className="about_section" id="about" >
       <Trans title="about"/>
       <div className="content">
         <div className="content">

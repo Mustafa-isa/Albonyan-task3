@@ -10,7 +10,7 @@ function Home() {
     SetOpen(!isOpen)
   }
   return (
-  <section className="home_section">
+  <section className="home_section" id="about">
     <header>
     <nav>
     <h1>
