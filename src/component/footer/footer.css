@@ -1,8 +1,8 @@
 .footer_container{
-  width:80vw;
+  width:95vw;
   margin:auto;
   display: flex;
-  justify-content:space-between ;
+justify-content: space-between;
   height: auto;
   padding: 10px;
   text-transform: capitalize;
@@ -20,7 +20,8 @@
   
 }
 .footer_container h2{
-  color: rgba(204, 96, 14, 0.852);
+  color:#741906;
+
 }
 .footer_container .left,.right{
   flex-direction: column;

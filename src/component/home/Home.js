@@ -15,7 +15,7 @@ const  headerRed =useRef()
       const scrollPosition = window.pageYOffset;
       const firstViewportHeight = window.innerHeight;
 
-      if (scrollPosition >= firstViewportHeight / 80) {
+      if (scrollPosition >= firstViewportHeight / 10) {
         headerRed.current.classList.add('navbar-scrolled');
       } else {
         headerRed.current.classList.remove('navbar-scrolled');
