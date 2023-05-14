@@ -12,14 +12,14 @@ function Logo() {
 
   return (
   <section className="logo_div_section">
-<img src={image8} alt="" />
-<img src={image1} alt="" />
-<img src={image7} alt="" />
-<img src={image6} alt="" />
-<img src={image4} alt="" />
-<img src={image3} alt="" />
-<img src={image2} alt="" />
-<img src={image5} alt="" />
+<img  className="image_cluser_222" src={image8} alt="" />
+<img className="image_cluser_222"src={image1} alt="" />
+<img  className="image_cluser_222"src={image7} alt="" />
+<img  className="image_cluser_222"src={image6} alt="" />
+<img className="image_cluser_222" src={image4} alt="" />
+<img className="image_cluser_222" src={image3} alt="" />
+<img className="image_cluser_222" src={image2} alt="" />
+<img  className="image_cluser_222"src={image5} alt="" />
   </section>
 
   )

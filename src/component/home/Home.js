@@ -1,17 +1,38 @@
-import {React,useState} from 'react'
+import {React,useState ,useRef ,useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import arowBtn  from "../../assets/images/Vector (1).png"
 import "./nav.css"
 function Home() {
+const  headerRed =useRef()
   const [isOpen ,SetOpen] = useState(false)
   const handleDrop =() =>{
     SetOpen(!isOpen)
   }
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset;
+      const firstViewportHeight = window.innerHeight;
+
+      if (scrollPosition >= firstViewportHeight / 80) {
+        headerRed.current.classList.add('navbar-scrolled');
+      } else {
+        headerRed.current.classList.remove('navbar-scrolled');
+      }
+
+      
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
   <section className="home_section" id="about">
-    <header>
+    <header ref={headerRed}>
     <nav>
     <h1>
         YourCar

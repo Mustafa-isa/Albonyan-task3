@@ -1,10 +1,12 @@
 .about_section{
-  margin-top: 60px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-height: 80vh;
+  width: 80%;
+height: 60vh;
 position: relative;
+margin-bottom: 19px;
+
 }
 .about_section .content{
   display: flex;
@@ -20,7 +22,7 @@ flex: 3;
 }
 .about_section .content p{
   padding-bottom: 10px;
-  font-size: 13px;
+  font-size: 11px;
 
 }
 .about_section .p_flex{
@@ -49,7 +51,7 @@ display: none;
 
 }
 .about_section .content .p_flex p{
-font-size: 10px;
+font-size: 12px;
 }
 .about_section .content .p_flex {
 gap: 3px;
