@@ -7,6 +7,7 @@ function Footer() {
     <div className="footer_container">
       <div className="left">
         <h2>Your Car</h2>
+        
         <div className="content">
           <p>
             We are known for luxurious and premium chaffeur services worldwide.

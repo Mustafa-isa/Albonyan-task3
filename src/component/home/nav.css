@@ -86,7 +86,12 @@ font-size: 30px;
 background-color: transparent;
 margin-left: 15px;
 margin-top: 9px;
+padding: 10px;
+border-radius: 3px;
+background-color: #fff;
+
 cursor: pointer;
+color: #254342;
 
 }
 .home_section .icon{
