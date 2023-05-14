@@ -7,7 +7,7 @@ import cardThreee from "../../assets/images/Group 1129.png"
 function Services() {
   return (
     
-    <section className="service_section">
+    <section className="service_section" id="services">
       <div className="layer"></div>
       <Trans title="Services" />
 <div className="content">

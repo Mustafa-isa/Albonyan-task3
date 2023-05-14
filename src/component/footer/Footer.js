@@ -1,10 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faPhone, faHandRock } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faPhone, faHandRock , } from '@fortawesome/free-solid-svg-icons';
+// import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 import  "./footer.css"
 function Footer() {
   return (
-    <div className="footer_container">
+  <div className="container_footer">
+      <div className="footer_container">
       <div className="left">
         <h2>Your Car</h2>
         
@@ -52,6 +55,13 @@ We are known for luxurious and premium chaffeur services worldwide. We are simpl
 
       </div>
     </div>
+      {/* <div className="theend_footer">
+        asvfdw
+      <FontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon icon={faFacebook} />
+        <FontAwesomeIcon icon={faTwitter} />
+      </div> */}
+  </div>
   );
 }
 
