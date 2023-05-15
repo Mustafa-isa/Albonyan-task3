@@ -7,6 +7,7 @@ import Testmonial from "./component/testmonial/Testmonial"
 import Logo from './component/logo/Logo'
 import Footer from './component/footer/Footer'
 import Context from './context/Context'
+import Product from './product/Product'
 function App() {
   return (
 <Context>
@@ -14,6 +15,7 @@ function App() {
 <Home/>
 <About/>
 <Services />
+<Product />
 <CarsGallery />
 <Testmonial />
 <Logo />
