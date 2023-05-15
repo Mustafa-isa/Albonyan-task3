@@ -6,8 +6,10 @@ import CarsGallery from './component/carsGallery/CarsGallery'
 import Testmonial from "./component/testmonial/Testmonial"
 import Logo from './component/logo/Logo'
 import Footer from './component/footer/Footer'
+import Context from './context/Context'
 function App() {
   return (
+<Context>
 <div className="MAIN">
 <Home/>
 <About/>
@@ -17,6 +19,7 @@ function App() {
 <Logo />
 <Footer/>
 </div>
+</Context>
   )
 }
 
