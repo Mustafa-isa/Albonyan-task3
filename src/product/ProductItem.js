@@ -11,6 +11,18 @@ function ProductItem(props) {
   const [quantity ,SetQuantity] =useState(0)
   const Decraese= () =>{
 SetQuantity( quantity-1 < 0 ? 0:quantity-1)
+
+
+dispatch({
+  type:"DELETE_PRODUCT",
+  payload:{
+id:datum.id,
+name:datum.name,
+imageUrl:datum.image,
+class:datum.class
+  }
+})
+
   }
     const Incraese= () =>{
       SetQuantity( quantity+1)
@@ -21,6 +33,7 @@ id:datum.id,
 name:datum.name,
 imageUrl:datum.image,
 class:datum.class
+
         }
       })
   }

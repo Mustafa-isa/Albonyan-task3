@@ -3,8 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import arowBtn  from "../../assets/images/Vector (1).png"
+import {UseData} from "../../context/Context"
 import "./nav.css"
 function Home() {
+  const products = UseData().products
+  console.log(products)
+
 const  headerRed =useRef()
   const [isOpen ,SetOpen] = useState(false)
   const handleDrop =() =>{
@@ -74,6 +78,23 @@ We offer a wide range of cars that cater to your needs and budget. Visit us toda
   Discover
   <img src={arowBtn} alt="" />
 </button>
+    </div>
+    <div className="card_div">
+      {
+        products.length >0  ? 
+        
+        products.map(el =>{
+          return(
+            <div key={el.id} className="one_product">
+              <div className="info">
+                <p className="name">{el.name}</p>
+              </div>
+            </div>
+          )
+        })
+        
+        : <h2> Card Is EMPTY</h2>
+      }
     </div>
   </section>
   )

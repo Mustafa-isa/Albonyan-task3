@@ -23,11 +23,18 @@ const inialValue ={
         const newProduct = { ...action.payload, quantity: 1 };
         return { products: [...state.products, newProduct] };
       }
-  
+      case "DELETE_PRODUCT":
+        const data =[...state.products]
+        const filteredProducts = data.filter(
+          (product) => product.id !== action.payload.id);
+          return { products: filteredProducts };
+          
+      
     case "DECREMENT_PRODUCT":
       const decrementedProducts = [...state.products];
       const productToDecrement = decrementedProducts.find(
         (product) => product.id === action.payload.id
+  
       );
       productToDecrement.quantity--;
       if (productToDecrement.quantity === 0) {
@@ -55,7 +62,6 @@ const inialValue ={
   )
   }
 export const UseData =()=>{
-  console.log(useContext(ContextProvide))
   return useContext(ContextProvide)
 }
 
