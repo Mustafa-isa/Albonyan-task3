@@ -61,7 +61,10 @@ const  headerRed =useRef()
           </ul>
         </div>
         <div className="icon" onClick={OpenClick} >
-          <span className="numOfPr">3</span>
+          {
+            products.length> 0?        <span className="numOfPr">{products.length}</span>  :null
+          }
+  
         <FontAwesomeIcon className="icon_i" icon={faShoppingCart} />
         </div>
       </div>
