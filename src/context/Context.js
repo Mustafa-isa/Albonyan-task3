@@ -29,6 +29,11 @@ const inialValue ={
           (product) => product.id !== action.payload.id);
           return { products: filteredProducts };
           
+
+          case "DELETE_ALL":
+          
+              return { products: [] };
+              
       
     case "DECREMENT_PRODUCT":
       const decrementedProducts = [...state.products];

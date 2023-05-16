@@ -6,8 +6,6 @@ import {UseData} from "../context/Context.js"
 function ProductItem(props) {
   const datum =props.data
   const dispatch =UseData().dispatch
-  const basket =UseData().basket
-  console.log(basket)
   const [quantity ,SetQuantity] =useState(0)
   const Decraese= () =>{
 SetQuantity( quantity-1 < 0 ? 0:quantity-1)

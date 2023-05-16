@@ -1,16 +1,23 @@
 import {React,useState ,useRef ,useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes ,faTrash } from "@fortawesome/free-solid-svg-icons";
 import arowBtn  from "../../assets/images/Vector (1).png"
 import {UseData} from "../../context/Context"
+import image from "../../products_data/car1.png"
 import "./nav.css"
 function Home() {
   const products = UseData().products
-  console.log(products)
+
+
+
 
 const  headerRed =useRef()
   const [isOpen ,SetOpen] = useState(false)
+  const [card ,SetCard] =useState(false)
+  const OpenClick =() =>{
+    SetCard(!card)
+  }
   const handleDrop =() =>{
     SetOpen(!isOpen)
   }
@@ -34,6 +41,8 @@ const  headerRed =useRef()
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  const dispatch =UseData().dispatch
+  console.log(dispatch)
   return (
   <section className="home_section" id="about">
     <header ref={headerRed}>
@@ -51,7 +60,7 @@ const  headerRed =useRef()
             <li ><a href="#contcat">Contact Us</a></li>
           </ul>
         </div>
-        <div className="icon" >
+        <div className="icon" onClick={OpenClick} >
           <span className="numOfPr">3</span>
         <FontAwesomeIcon className="icon_i" icon={faShoppingCart} />
         </div>
@@ -79,7 +88,7 @@ We offer a wide range of cars that cater to your needs and budget. Visit us toda
   <img src={arowBtn} alt="" />
 </button>
     </div>
-    <div className="card_div">
+    <div className={card ? "card_div_ showwwmm" :"card_div_"}>
       {
         products.length >0  ? 
         
@@ -88,13 +97,52 @@ We offer a wide range of cars that cater to your needs and budget. Visit us toda
             <div key={el.id} className="one_product">
               <div className="info">
                 <p className="name">{el.name}</p>
+                <p>{el.class}</p>
+                <div className="container_btn">
+                
+                  <div className ="fuckYou">
+                  <button>-</button>
+                  <span>3</span>
+                  <button>+</button>
+                  </div>
+                  <button  className="bbbb"onClick={() =>{
+                    
+                  dispatch({
+                    type:"DELETE_PRODUCT",
+                    payload:{
+                  id:el.id,
+                  name:el.name,
+                  imageUrl:el.image,
+                  class:el.class
+                    }
+                  })
+                  }}>
+      <FontAwesomeIcon icon={faTrash} />
+    </button>
+                </div>
               </div>
+              <img src={image} alt="" />
+
             </div>
           )
         })
         
         : <h2> Card Is EMPTY</h2>
       }
+        {
+          products.length > 0?
+          <button className='deleteAll' onClick={() =>{
+                    
+            dispatch({
+              type:"DELETE_ALL",
+              drop:true
+          
+            })
+            }}>
+              Delete ALL
+<FontAwesomeIcon icon={faTrash} />
+</button> :null
+        }
     </div>
   </section>
   )

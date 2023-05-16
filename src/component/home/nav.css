@@ -275,3 +275,101 @@ z-index: 1000;
 
 
 }
+.card_div_{
+  position: fixed;
+  background-color: #222;
+  border-radius: 3px;
+  color: #fff;
+  top: 12%;
+  width: 250px;
+  right: 0;
+  z-index: 10000;
+  padding: 10px;
+  font-size: 12px;
+  min-height: 100vh;
+  text-align: center;
+  transform: translateY(-300%);
+
+transition: .4s ease;
+
+}
+.card_div_.showwwmm{
+  transform: translateY(0)
+  
+}
+.card_div_ .one_product{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+  background-color: #eee;
+  color: #222;
+  padding: 10px;
+
+}
+.card_div_ .one_product img{
+
+width: 80px;
+
+
+}
+
+.card_div_ .one_product .info .name{
+
+  color: #830720;
+}
+.card_div_ .one_product .container_btn{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  
+}
+
+.card_div_ .one_product .container_btn span{
+background-color: #555;
+color: #fff;
+display: block;
+padding: 2px 6px;
+}
+
+
+.fuckYou button{
+padding: 3px 7px;
+border: 0;
+outline: 0;
+color: #fff;
+background-color: #830720;
+}
+.fuckYou{
+  display: flex;
+  align-items: center;
+  
+
+}
+.bbbb{
+  all: unset;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+button{
+  cursor: pointer;
+}
+@media(max-width:767px){
+  .card_div{
+    width: 60%;
+    top: 5%;
+  } 
+}
+.deleteAll{
+padding: 10px;
+border-radius: 3px;
+color: #fff;
+background-color: #830720;
+border: 0;
+outline: 0;
+
+}
