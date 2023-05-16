@@ -11,6 +11,7 @@ import ProductItem from "../../src/product/ProductItem";
 function Product() {
   const cars = [
     {
+      id:1,
       name: "Porsche 911",
       class: "Sports Car",
       description:
@@ -20,6 +21,7 @@ function Product() {
       image: "../products_data/image 3.png"
     },
     {
+      id:2,
       name: "BMW 7 Series",
       class: "Luxury Car",
       description:
@@ -29,6 +31,7 @@ function Product() {
       image: "../products_data/car3.png"
     },
     {
+      id:3,
       name: "Range Rover Sport",
       class: "SUV",
       description:
@@ -38,6 +41,7 @@ function Product() {
       image: "../products_data/car3.png"
     },
     {
+      id:4,
       name: "Mercedes-Benz S-Class",
       class: "Luxury Car",
       description:
@@ -47,6 +51,7 @@ function Product() {
       image: "../products_data/car2.png"
     },
     {
+      id:5,
       name: "Tesla Model S",
       class: "Electric Car",
       description:
@@ -56,6 +61,7 @@ function Product() {
       image: "../products_data/car1.png"
     },
     {
+      id:6,
       name: "Bentley Bentayga",
       class: "Luxury SUV",
       description:
